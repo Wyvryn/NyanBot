@@ -6,7 +6,7 @@ from random import randint
 class NyanPlugin(WillPlugin):
 
     @hear("nyan", case_sensitive=False)
-    def hello(self, message):
+    def nyan(self, message):
         resp = """<pre>
 -_-_-_-_-_-_-_,------,
 _-_-_-_-_-_-_-|   /\_/\  
@@ -16,3 +16,7 @@ _-_-_-_-_-_-_-|   /\_/\
         colors = ["yellow", "red", "green", "purple", "gray"]
         rand = randint(0,4)
         self.say(resp, html=True, message=message, color=colors[rand])
+
+    @respond_to("source", case_sensitive=False)
+    def github_url(self, message):
+        self.reply(message, "My source code is located at https://github.com/Wyvryn/NyanBot")
