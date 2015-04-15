@@ -20,3 +20,11 @@ _-_-_-_-_-_-_-|   /\_/\
     @respond_to("source", case_sensitive=False)
     def github_url(self, message):
         self.reply(message, "My source code is located at https://github.com/Wyvryn/NyanBot")
+
+    @respond_to("murica!", case_sensitive=False)
+    def murica(self, message):
+        self.reply(message, "http://i.imgur.com/ZQzmPHM.gif")
+
+    @respond_to("classic", case_sensitive=False)
+    def classic(self, message):
+        self.reply(message, "http://i.imgur.com/ssKsGid.gif")
