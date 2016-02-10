@@ -1,15 +1,4 @@
 # NyanBot
-This is a [will](https://github.com/skoczen/will) bot.
+These are plugins for the [will](https://github.com/skoczen/will) HipChat bot.
 
-Requirments -
-Will -> 
-```
-pip install will
-```
-
-Redis -> 
-```
-apt-get install redis-server
-```
-
-To launch, run ```run_will.py```, it should walk you through what environment variables need to be set up to connect to Hipchat.
+To install, copy the py files into `<will_directory>/plugins` and modify will's `config.py` accordingly.
